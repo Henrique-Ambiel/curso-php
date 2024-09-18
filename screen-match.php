@@ -1,7 +1,7 @@
 <?php //Inicia um código PHP
 
 //Exibe a string no terminal
-echo "Bem vindo(a) ao Screen Match!\n";
+echo "Bem vindo(a) ao\tScreen Match!\n";
 
 //Declaração de variáveis 
 $nomeFilme = "Top Gun - Maverick\n";
@@ -20,4 +20,6 @@ $planoPrime = true;
 //Operador lógico booleano
 $incluidoPlano = $planoPrime || $anoLancamento > 2020;
 
-echo $notaFilme;
+// "." concatena os textos
+echo "Nome do filme: " . $nomeFilme;
+echo "Nota do filme: $notaFilme\n";
