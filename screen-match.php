@@ -15,6 +15,9 @@ $somaNotas +=6;
 $somaNotas +=5;
 
 $notaFilme = $somaNotas / 5;
-$incluidoPlano = true;
+$planoPrime = true;
+
+//Operador lógico booleano
+$incluidoPlano = $planoPrime || $anoLancamento > 2020;
 
 echo $notaFilme;
