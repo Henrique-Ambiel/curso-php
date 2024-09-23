@@ -14,7 +14,7 @@ do {
     echo "4. Sair\n";
     echo "Digite um número: ";
 
-    $numero = (int) fgets(STDIN);
+    $numero = (int) fgets(STDIN); //Lê dados do teclado do usuário
 
     //Condição para vários todos os casos do menu
     switch($numero){
