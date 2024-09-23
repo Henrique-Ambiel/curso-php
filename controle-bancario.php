@@ -1,11 +1,6 @@
 <?php
 $saldo = 1000;
 
-//Início do programa
-echo "************************\n";
-echo "Titular: Henrique Ambiel\n";
-echo "************************\n";
-
 //Executa o programa em loop enquanto a condição while for verdadeira
 do {
     //Informações exibidas no início do programa
@@ -39,7 +34,7 @@ do {
             echo "Quanto deseja depositar ?: ";
             $valorDepositar = (float) fgets(STDIN);
             if($valorDepositar < 0){
-                echo "Não é possível depositar esse valor";
+                echo "Não é possível depositar esse valor\n";
             } else {
                 $saldo += $valorDepositar;
             }
