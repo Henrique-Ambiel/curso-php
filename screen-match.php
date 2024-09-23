@@ -8,10 +8,10 @@ $nomeFilme = "Top Gun - Maverick";
 $nomeFilme = "A hora do pesadelo";
 $nomeFilme = "Super Bad";
 $anoLancamento = 2022;
-$somaNotas = 0;
-$quantidadeNotas = $argc - 1;
+$notas = [];
+$quantidadeNotas = $argc - 1; //$argc é o número de argumentos passados do script
 
-//$anoLancamento = $argv[1] ?? 2022; //Se argv = null, 2022 será exibido no terminal
+//$anoLancamento = $argv[1] ?? 2022; //Se $argv = null, 2022 será exibido no terminal
 
 /*Operadores matemáticos
 $somaNotas = 9;
@@ -20,11 +20,18 @@ $somaNotas +=7.5;
 $somaNotas +=6;
 $somaNotas +=5;*/
 
-for($contador = 1; $contador < $argc; $contador += 1){
-    $somaNotas += $argv[$contador];
+//Looping estruturado em inicialização, condição e incremeneto
+for($contador = 1; $contador < $argc; $contador++){
+    $notas[]= (float) $argv[$contador]; //$argv é um array com todos os argumentos passados do script
 }
 
-$notaFilme = $somaNotas / $quantidadeNotas;
+/*$somaNotas = 0;
+//percorre arrays e listas para iterar sobre os elementos deles
+foreach($notas as $nota) {
+    $somaNotas +=$notas;
+} */
+
+$notaFilme = array_sum($notas) / $quantidadeNotas;
 $planoPrime = true;
 
 //Operador lógico booleano
@@ -52,6 +59,16 @@ $genero = match ($nomeFilme) {
     default => "Gênero desconhecido"
 };
 
-echo "Gênero: $genero";
+echo "Gênero: $genero\n";
 
-echo $argc;
+//var_dump($argv); //Exibe no terminal os valores e o tipo da variável
+
+//Array que guarda infomações sobre o filme
+$filme = [
+    "Nome" => "Super Bad", 
+    "Ano de lançamento" => 2007, 
+    "Média de notas" => 7.5, 
+    "Gênero" => "Comédia"
+];
+
+echo $filme["Nome"];
