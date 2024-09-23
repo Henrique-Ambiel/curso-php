@@ -32,13 +32,17 @@ do {
             if($valorSacar > $saldo){
                 echo "Não foi possível sacar\n";
                 } else {
-            $saldo -= $valorSacar;
-            }
+                    $saldo -= $valorSacar;
+                }
             break;
-        case 3: //Recebe a quantidade que o usuário deseja depositar
+        case 3: //Recebe a quantidade que o usuário deseja depositar e verifica se o número depositado é negativo
             echo "Quanto deseja depositar ?: ";
             $valorDepositar = (float) fgets(STDIN);
-            $saldo += $valorDepositar;
+            if($valorDepositar < 0){
+                echo "Não é possível depositar esse valor";
+            } else {
+                $saldo += $valorDepositar;
+            }
             break;
         case 4: //Finaliza a sessão
             echo "Você finalizou sua sessão";
