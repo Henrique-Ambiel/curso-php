@@ -68,8 +68,14 @@ $filme = [
 ];
 
 echo $filme["Nome"];
-var_dump($notas);
+var_dump($notas); //Exibe os valores e suas informações do array
 sort($notas); //Função que ordena o array
 var_dump($notas);
 $menorNota = min($notas); //Exibe o menor valor do array
-echo $menorNota;
+var_dump($menorNota);
+
+var_dump($filme["Nome"]);
+$posicao2Pontos = strpos($filme["Nome"], ":"); //Pega a posição de uma string no código
+var_dump($posicao2Pontos);
+
+var_dump(substr($filme["Nome"], 0, $posicao2Pontos)); //Recebe 3 parâmetros (o último opcional), uma string e dois int 
