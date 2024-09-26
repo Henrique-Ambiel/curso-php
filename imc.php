@@ -1,7 +1,7 @@
 <?php
 //Variáveis
 $altura = 1.73;
-$peso = 53;
+$peso = 57;
 $imc = $peso / $altura ** 2; //Cálculo do IMC ("**" = potenciação)
 
 //Após o cálculo do IMC, exibe o resultado no terminal
