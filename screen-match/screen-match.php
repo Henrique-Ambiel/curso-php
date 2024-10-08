@@ -64,3 +64,7 @@ $posicao2Pontos = strpos($filme["Nome"], ":"); //Pega a posição de uma string 
 var_dump($posicao2Pontos);
 
 var_dump(substr($filme["Nome"], 0, $posicao2Pontos)); //Recebe 3 parâmetros (o último opcional), uma string e dois int 
+
+//Converte uma string JSON em um dado PHP
+var_dump(json_decode('{"Nome":"Super Bad","Ano de lan\u00e7amento":2007,"M\u00e9dia de notas":7.5,"G\u00eanero":"Com\u00e9dia"})', true));
+//echo json_encode($filme); Pega um valor em PHP e transforma em JSON (JavaScript Object Notation)
