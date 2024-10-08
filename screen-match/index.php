@@ -1,6 +1,6 @@
 <?php //Inicia um código PHP
 
-require __DIR__ . "/funcoes.php"; //Pega todo o conteúdo do código funcoes e cola aqui
+require __DIR__ . "/src/funcoes.php"; //Pega todo o conteúdo do código funcoes e cola aqui
 
 //Exibe a string no terminal
 echo "Bem vindo(a) ao\tScreen Match!\n";
@@ -46,14 +46,9 @@ echo "Gênero: $genero\n";
 //var_dump($argv); //Exibe no terminal os valores e o tipo da variável
 
 //Array que guarda infomações sobre o filme
-$filme = [
-    "Nome" => "Super Bad", 
-    "Ano de lançamento" => 2007, 
-    "Média de notas" => 7.5, 
-    "Gênero" => "Comédia"
-];
+$filme = criaFilme("Super Bad", 2007, 7.5, "Comédia");
 
-echo $filme["Ano"];
+echo $filme["Ano de lançamento"];
 
 var_dump($notas); //Exibe os valores e suas informações do array
 sort($notas); //Função que ordena o array

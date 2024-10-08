@@ -16,3 +16,13 @@ function exibirMensagemLancamento(int $ano): void {
 function incluidoPlano(bool $planoPrime, int $anoLancamento): bool {
     return $planoPrime || $anoLancamento > 2020;
 }
+
+//Função que define todos os parâmetros necessários para um filme
+function criaFilme(string $nome, int $anoLancamento, float $nota, string $genero): array{
+    return [
+        'Nome' => $nome,
+        'Ano' => $anoLancamento,
+        'Nota' => $nota,
+        'Gênero' => $genero,
+    ];
+}
