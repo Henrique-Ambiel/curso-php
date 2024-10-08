@@ -48,7 +48,7 @@ echo "Gênero: $genero\n";
 //Array que guarda infomações sobre o filme
 $filme = criaFilme("Super Bad", 2007, 7.5, "Comédia");
 
-echo $filme["Ano de lançamento"];
+echo $filme['Ano'] . "\n";
 
 var_dump($notas); //Exibe os valores e suas informações do array
 sort($notas); //Função que ordena o array
