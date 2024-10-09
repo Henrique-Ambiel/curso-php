@@ -1,5 +1,6 @@
 <?php //Inicia um código PHP
 
+require __DIR__ . "/src/Modelo/Filme.php";
 require __DIR__ . "/src/funcoes.php"; //Pega todo o conteúdo do código funcoes e cola aqui
 
 //Exibe a string no terminal
@@ -48,7 +49,7 @@ echo "Gênero: $genero\n";
 //Array que guarda infomações sobre o filme
 $filme = criaFilme("Super Bad", 2007, 7.5, "Comédia");
 
-echo $filme['Ano'] . "\n";
+echo $filme->ano . "\n";
 
 var_dump($notas); //Exibe os valores e suas informações do array
 sort($notas); //Função que ordena o array
@@ -56,11 +57,11 @@ var_dump($notas);
 $menorNota = min($notas); //Exibe o menor valor do array
 var_dump($menorNota);
 
-var_dump($filme['Nome']);
-$posicao2Pontos = strpos($filme['Nome'], ':'); //Pega a posição de uma string no código
+var_dump($filme->nome);
+$posicao2Pontos = strpos($filme->nome, ':'); //Pega a posição de uma string no código
 var_dump($posicao2Pontos);
 
-var_dump(substr($filme['Nome'], 0, $posicao2Pontos)); //Recebe 3 parâmetros (o último opcional), uma string e dois int 
+var_dump(substr($filme->nome, 0, $posicao2Pontos)); //Recebe 3 parâmetros (o último opcional), uma string e dois int 
 
 $filmeComoString = json_encode($filme); //Pega um valor em PHP e transforma em JSON (JavaScript Object Notation)
 file_put_contents(__DIR__ . '/filme.json', $filmeComoString);

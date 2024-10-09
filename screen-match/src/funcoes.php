@@ -18,11 +18,13 @@ function incluidoPlano(bool $planoPrime, int $anoLancamento): bool {
 }
 
 //Função que define todos os parâmetros necessários para um filme
-function criaFilme(string $nome, int $anoLancamento, float $nota, string $genero): array{
-    return [
-        'Nome' => $nome,
-        'Ano' => $anoLancamento,
-        'Nota' => $nota,
-        'Gênero' => $genero,
-    ];
+function criaFilme(string $nome, int $anoLancamento, float $nota, string $genero): Filme
+{
+    $filme = new Filme();
+    $filme->nome = $nome; //Acessa o atributo de uma classe
+    $filme->ano = $ano;
+    $filme->genero = $genero;
+    $filme->nota = $nota;
+    
+    return $filme;
 }
