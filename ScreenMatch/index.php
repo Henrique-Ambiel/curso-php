@@ -1,10 +1,14 @@
 <?php
 
+require __DIR__ . "/src/Modelo/ComAvaliacao.php";
+require __DIR__ . "/src/Modelo/Avaliavel.php";
 require __DIR__ . "/src/Modelo/Genero.php"; //Pega todo o conteúdo do código de Genero e cola aqui
 require __DIR__ ."/src/Modelo/Titulo.php";
 require __DIR__ . "/src/Modelo/Filme.php"; //Pega todo o conteúdo do código Modelo e cola aqui
 require __DIR__ . "/src/Modelo/Serie.php";
-require __DIR__ . "/src/Calculos/calculadora.php";
+require __DIR__ . "/src/Modelo/Episodio.php";
+require __DIR__ . "/src/Calculos/Calculadora.php";
+require __DIR__ . "/src/Calculos/ConversorEstrelas.php";
 
 echo "Bem vindo ao ScreenMatch\n"; //Exibe a string no terminal
 
@@ -33,6 +37,12 @@ $serie = new Serie(
     60,
 );
 
+$episodio = new Episodio(
+    $serie,    
+    "Episódio 1",
+    1
+);
+
 $serie->avalia(9);
 
 var_dump($serie);
@@ -44,4 +54,7 @@ $calculadora-> inclui($filme);
 $calculadora-> inclui($serie);
 $duracao = $calculadora->duracao();
 
-echo "A maratona durará $duracao minutos";
+echo "A maratona durará $duracao minutos\n";
+
+$conversor = new ConversorEstrelas();
+echo $conversor->avaliar($serie);

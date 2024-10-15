@@ -1,9 +1,13 @@
 <?php
 
-//Classe filme e seus atributos
-abstract class Titulo {
-    public array $notas;
+namespace ScreenMatch\src\Modelo; //Espaço em que define e agrupa códigos de maneira lógica, como uma pasta
 
+
+//Classe filme e seus atributos (ela implementa os métodos da interface Avaliavel)
+abstract class Titulo implements Avaliavel{
+   
+    use ComAvaliacao; //Herda as características da trait ComAvaliacao
+    
     //Construtor define e acessa os atributos através das declarações deles e da propriedade readonly
     public function __construct(
         public readonly string $nome, 
@@ -11,20 +15,6 @@ abstract class Titulo {
         public readonly Genero $genero
     ) 
     {
-        $this->notas = [];
-    }
-
-    public function avalia (float $nota): void //Recebe as notas 
-    {
-        $this->notas[] = $nota; //Indica objeto utilizado para executar a função
-    }
-
-    public function media() : float //Cálcula a média de notas
-    {
-        $somaNotas = array_sum($this->notas); //Soma as notas do array
-        $totalNotas = count($this->notas);
-    
-        return $somaNotas / $totalNotas;
     }
 
     abstract public function duracaoMinutos(): int;

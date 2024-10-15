@@ -1,5 +1,7 @@
 <?php
 
+namespace ScreenMatch\src\Modelo;
+
 //Classe filme e seus atributos
 class Filme extends Titulo{
 

@@ -1,5 +1,7 @@
 <?php 
 
+namespace ScreenMatch\src\Modelo;
+
 class Serie extends Titulo{
 
     //Construtor define e acessa os atributos através das declarações deles e da propriedade readonly
