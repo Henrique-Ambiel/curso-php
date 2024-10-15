@@ -1,7 +1,7 @@
 <?php
 
 //Classe filme e seus atributos
-class Titulo {
+abstract class Titulo {
     public array $notas;
 
     //Construtor define e acessa os atributos através das declarações deles e da propriedade readonly
@@ -27,10 +27,7 @@ class Titulo {
         return $somaNotas / $totalNotas;
     }
 
-    public function duracaoMinutos(): int
-    {
-        return 0;
-    }
+    abstract public function duracaoMinutos(): int;
 
     /*Método Get acessa o atributo anoLancamento
     public function anoLancamento(): int
