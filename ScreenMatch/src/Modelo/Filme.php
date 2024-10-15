@@ -16,6 +16,7 @@ class Filme extends Titulo{
         parent::__construct($nome, $anoLancamento, $genero);
     }
 
+    #[\Override] //Atributo usado para indicar que um método em uma classe filha está sobrescrevendo um método de uma classe pai
     public function duracaoMinutos(): int
     {
         return $this->duracaoMinutos;

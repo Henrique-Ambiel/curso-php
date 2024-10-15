@@ -2,6 +2,7 @@
 
 namespace ScreenMatch\src\Calculos;
 
+use ArgumentCountError;
 use DivisionByZeroError;
 use ScreenMatch\src\Modelo\Avaliavel;
 
@@ -14,6 +15,9 @@ class ConversorEstrelas{
             return round($nota) / 2; //Arredonda o valor de nota
         } catch(DivisionByZeroError){
             //echo $erro->getMessage(); Exibe no terminal o tipo de erro
+            return 0;
+        } catch(ArgumentCountError $erro){
+            echo $erro->getMessage();
             return 0;
         }
     }

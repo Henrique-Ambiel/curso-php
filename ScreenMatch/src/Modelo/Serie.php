@@ -2,6 +2,8 @@
 
 namespace ScreenMatch\src\Modelo;
 
+use Override;
+
 class Serie extends Titulo{
 
     //Construtor define e acessa os atributos através das declarações deles e da propriedade readonly
@@ -17,6 +19,7 @@ class Serie extends Titulo{
         parent::__construct($nome, $anoLancamento, $genero);
     }
 
+    #[\Override]
     public function duracaoMinutos(): int
     {
         return $this->temporadas * $this->episodiosTemporadas * $this->minutosEpisodio;
