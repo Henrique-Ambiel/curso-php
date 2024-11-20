@@ -1,4 +1,5 @@
 Serviço de Streaming de Filmes - Curso de PHP 🎥🍿
+
 Este repositório contém o projeto desenvolvido durante o curso de Programação em PHP da Alura. Ele foi criado com o objetivo de aprender e aplicar conceitos fundamentais e avançados da linguagem PHP.
 
 📋 Conteúdo do Projeto
