@@ -5,16 +5,16 @@ Este repositório contém o projeto desenvolvido durante o curso de Programaçã
 📋 Conteúdo do Projeto
 O projeto consiste em um serviço de streaming de filmes, implementado como exemplo para explorar os seguintes tópicos:
 
-Sintaxe básica do PHP: Estruturas, variáveis, funções e fluxo de controle.
+- Sintaxe básica do PHP: Estruturas, variáveis, funções e fluxo de controle.
 
-Programação Orientada a Objetos (POO):
-Criação de classes, métodos e atributos.
-Manipulação de objetos e encapsulamento.
+- Programação Orientada a Objetos (POO):
+  Criação de classes, métodos e atributos.
+  Manipulação de objetos e encapsulamento.
 
-Conceitos avançados do PHP:
-Abstract classes e sua aplicação.
-Enums para simplificar definições de constantes.
-Outros conceitos específicos da linguagem.
+- Conceitos avançados do PHP:
+  Abstract classes e sua aplicação.
+  Enums para simplificar definições de constantes.
+  Outros conceitos específicos da linguagem.
 
 💻 Tecnologias Utilizadas
 Linguagem: PHP (versão mais recente)
