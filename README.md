@@ -18,17 +18,17 @@ O projeto consiste em um serviço de streaming de filmes, implementado como exem
 
 💻 Tecnologias Utilizadas
 
-Linguagem: PHP (versão mais recente)
+- Linguagem: PHP (versão mais recente)
 
-Editor: Visual Studio Code
+- Editor: Visual Studio Code
 
-Foco: Desenvolvimento back-end com PHP.
+- Foco: Desenvolvimento back-end com PHP.
 
 📁 Estrutura do Repositório
 
-/src: Contém os arquivos do projeto, organizados em pastas por funcionalidade.
+- /src: Contém os arquivos do projeto, organizados em pastas por funcionalidade.
 
-Arquivos com exemplos comentados e bem documentados para facilitar o aprendizado.
+- Arquivos com exemplos comentados e bem documentados para facilitar o aprendizado.
 
 🚀 Como Utilizar
 Clone o repositório:
