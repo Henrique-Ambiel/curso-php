@@ -42,7 +42,7 @@ Execute o servidor embutido do PHP para testar o projeto:
 
 - php -S localhost:8000 -t src
   
-- Explore os arquivos e aplique os conceitos aprendidos durante o curso.
+Explore os arquivos e aplique os conceitos aprendidos durante o curso.
 
 🎯 Objetivo
 
