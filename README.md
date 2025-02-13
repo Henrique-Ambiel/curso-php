@@ -24,26 +24,6 @@ O projeto consiste em um serviço de streaming de filmes, implementado como exem
 
 - Foco: Desenvolvimento back-end com PHP.
 
-## 📁 Estrutura do Repositório
-
-- /src: Contém os arquivos do projeto, organizados em pastas por funcionalidade.
-
-- Arquivos com exemplos comentados e bem documentados para facilitar o aprendizado.
-
-## 🚀 Como Utilizar
-
-Clone o repositório:
-
-- git clone https://github.com/Henrique-Ambiel/curso-php.git
-  
-Certifique-se de ter a versão mais recente do PHP instalada em sua máquina.
-  
-Execute o servidor embutido do PHP para testar o projeto:
-
-- php -S localhost:8000 -t src
-  
-Explore os arquivos e aplique os conceitos aprendidos durante o curso.
-
 ## 🎯 Objetivo
 
 Este repositório foi criado para fins educativos, com o intuito de reforçar os conceitos aprendidos no curso e proporcionar uma base para projetos futuros em PHP.
