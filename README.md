@@ -1,30 +1,115 @@
-# Serviço de Streaming de Filmes - Curso de PHP 🎥🍿
+# Serviço de Streaming de Filmes — PHP 🎥🍿
 
-Este repositório contém o projeto desenvolvido durante o curso de Programação em PHP da Alura. Ele foi criado com o objetivo de aprender e aplicar conceitos fundamentais e avançados da linguagem PHP.
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=Linguagem&message=PHP&color=777BB4&style=for-the-badge&logo=php"/>
+  <img src="https://img.shields.io/static/v1?label=Editor&message=VS%20Code&color=007ACC&style=for-the-badge&logo=visualstudiocode"/>
+  <img src="https://img.shields.io/static/v1?label=Curso&message=Alura&color=blue&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=Status&message=Conclu%C3%ADdo&color=green&style=for-the-badge"/>
+</p>
 
-## 📋 Conteúdo do Projeto
-O projeto consiste em um serviço de streaming de filmes, implementado como exemplo para explorar os seguintes tópicos:
+> Status do Projeto: ✔️ Concluído
 
-- Sintaxe básica do PHP: Estruturas, variáveis, funções e fluxo de controle.
+### Tópicos
 
-- Programação Orientada a Objetos (POO):
-  Criação de classes, métodos e atributos.
-  Manipulação de objetos e encapsulamento.
+:small_blue_diamond: [Descrição do Projeto](#descrição-do-projeto)
 
-- Conceitos avançados do PHP:
-  Abstract classes e sua aplicação.
-  Enums para simplificar definições de constantes.
-  Outros conceitos específicos da linguagem.
+:small_blue_diamond: [Funcionalidades e Conteúdo](#funcionalidades-e-conteúdo)
 
-## 💻 Tecnologias Utilizadas
+:small_blue_diamond: [Conceitos de Programação](#conceitos-de-programação)
 
-- Linguagem: PHP (versão mais recente)
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-- Editor: Visual Studio Code
+:small_blue_diamond: [Como Executar](#como-rodar-a-aplicação-arrow_forward)
 
-- Foco: Desenvolvimento back-end com PHP.
+:small_blue_diamond: [Tecnologias Utilizadas](#tecnologias-linguagens-e-ferramentas)
 
-## 🎯 Objetivo
+:small_blue_diamond: [Objetivo Acadêmico](#objetivo-acadêmico)
 
-Este repositório foi criado para fins educativos, com o intuito de reforçar os conceitos aprendidos no curso e proporcionar uma base para projetos futuros em PHP.
+---
 
+## Descrição do Projeto
+
+Projeto desenvolvido durante o curso de Programação em PHP da [Alura](https://www.alura.com.br/), utilizando a temática de um serviço de streaming de filmes como contexto para aplicação dos conceitos da linguagem.
+
+A proposta consiste em explorar os fundamentos do PHP e aprofundar conhecimentos em Programação Orientada a Objetos (POO), trabalhando com classes, objetos, métodos, atributos e recursos mais avançados da linguagem.
+
+## Funcionalidades e Conteúdo
+
+O projeto reúne implementações e exemplos práticos dos seguintes conceitos:
+
+:heavy_check_mark: Estruturação de código utilizando PHP.
+
+:heavy_check_mark: Declaração e manipulação de variáveis.
+
+:heavy_check_mark: Implementação de funções e estruturas de controle.
+
+:heavy_check_mark: Criação e manipulação de classes e objetos.
+
+:heavy_check_mark: Aplicação de conceitos de encapsulamento.
+
+:heavy_check_mark: Utilização de classes abstratas (*Abstract Classes*).
+
+:heavy_check_mark: Implementação de enums para representação de conjuntos de valores constantes.
+
+## Conceitos de Programação
+
+O desenvolvimento explora diferentes fundamentos da linguagem PHP:
+
+- **Sintaxe Básica:** utilização de variáveis, funções, operadores e estruturas de controle de fluxo.
+- **Programação Orientada a Objetos (POO):** criação de classes, objetos, atributos e métodos, além de conceitos como encapsulamento.
+- **Classes Abstratas:** utilização de estruturas que servem como base para outras classes, permitindo definir comportamentos compartilhados.
+- **Enums:** utilização de tipos enumerados para representar conjuntos de valores predefinidos, melhorando a organização e legibilidade do código.
+
+## Pré-requisitos
+
+Para executar os arquivos do projeto, são necessários:
+
+- [PHP](https://www.php.net/downloads.php)
+- [Visual Studio Code](https://code.visualstudio.com/) ou outro editor de código.
+- Terminal ou ambiente de execução compatível com PHP.
+
+> A versão exata do PHP utilizada durante o curso não foi especificada. Verifique a compatibilidade dos recursos utilizados, especialmente enums.
+
+## Como Rodar a Aplicação :arrow_forward:
+
+1. Clone este repositório:
+
+\`\`\`bash
+git clone URL_DO_REPOSITORIO
+\`\`\`
+
+2. Acesse a pasta do projeto:
+
+\`\`\`bash
+cd NOME_DA_PASTA
+\`\`\`
+
+3. Verifique se o PHP está instalado:
+
+\`\`\`bash
+php -v
+\`\`\`
+
+4. Execute o arquivo PHP principal do projeto:
+
+\`\`\`bash
+php nome-do-arquivo.php
+\`\`\`
+
+> Substitua `nome-do-arquivo.php` pelo arquivo principal correspondente à estrutura do projeto.
+
+## Tecnologias, Linguagens e Ferramentas
+
+- [PHP](https://www.php.net/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- Programação Orientada a Objetos (POO)
+- Classes Abstratas (*Abstract Classes*)
+- Enums
+
+## Objetivo Acadêmico
+
+Este projeto foi desenvolvido com finalidade educacional durante o processo de aprendizado da linguagem PHP.
+
+O objetivo é consolidar conhecimentos em programação back-end, explorando desde os fundamentos da linguagem até conceitos de orientação a objetos e recursos mais avançados, criando uma base técnica para o desenvolvimento de aplicações futuras.
+
+---
